@@ -10,8 +10,8 @@ conn = sqlite3.connect("new.db")
 c = conn.cursor()
 
 #create a table
-c.execute("DROP TABLE population")
-c.execute("""CREATE TABLE population(city TEXT, state TEXT, population INTEGER)""")
+# c.execute("DROP TABLE population")
+# c.execute("""CREATE TABLE population(city TEXT, state TEXT, population INTEGER)""")
 
 #inserting data into table
 c.execute("INSERT INTO population VALUES('Delhi', 'Mumbai', 9)")
